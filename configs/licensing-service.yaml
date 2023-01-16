@@ -1,0 +1,28 @@
+example:
+  property: I AM DEFAULT (FROM GIT)
+
+spring:
+  jpa:
+    hibernate.ddl-auto: none
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/ostock
+    username: user
+    password: pass
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  database.driverClassName: org.postgresql.Driver
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    enabled-by-default: true
