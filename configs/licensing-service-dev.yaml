@@ -1,5 +1,5 @@
 example:
-  property: I AM DEV (FROM GIT)
+  property: I AM DEV (FROM GITHUB)
 
 spring:
   datasource:
