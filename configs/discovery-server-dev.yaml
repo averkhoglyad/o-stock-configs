@@ -1,0 +1,6 @@
+server:
+  port: 8000
+
+eureka:
+  server:
+    wait-time-in-ms-when-sync-empty: 2
