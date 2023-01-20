@@ -2,7 +2,5 @@ server:
   port: 8000
 
 eureka:
-  instance:
-    hostname: localhost
   server:
     wait-time-in-ms-when-sync-empty: 0
